@@ -1,7 +1,7 @@
 font-family = FiraCode Nerd Font
 font-style = bold
 font-size = 14
-theme = tokyonight
+theme = catppuccin-mocha
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = bar
 cursor-style-blink=true
