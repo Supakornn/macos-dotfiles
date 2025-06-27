@@ -1,25 +1,28 @@
-# ---- CLI Tools ----
-abbr -a ll 'eza -la --color=always --long --git --icons=always'
-abbr -a ls 'eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions --tree --level=2'
-abbr -a lg lazygit
-abbr -a ldk lazydocker
-abbr -a zel zellij
+# ---- File Listing Aliases ----
+alias ll='eza --color=always --long --git --icons=always'
+alias la='eza -la --color=always --long --git --icons=always'
+alias ls='eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions --tree --level=2'
 
-# ---- Git ----
-abbr -a g git
-abbr -a ga 'git add -A -N && git add -p'
-abbr -a gp 'git push'
-abbr -a gl 'git pull'
-abbr -a gc 'git commit'
-abbr -a gdh 'git diff HEAD'
-abbr -a gd 'git diff'
-abbr -a gst 'git stash'
-abbr -a gstp 'git stash pop'
-abbr -a gco 'git checkout'
-abbr -a gfo 'git fetch origin'
+# ---- Tools ----
+alias lg='lazygit'
+alias ldk='lazydocker'
+alias zel='zellij'
 
-# ---- Docker ----
-abbr -a di 'docker images | docker-color-output -c ~/.config/docker-color-output/config.json'
-abbr -a dps 'docker ps -a | docker-color-output -c ~/.config/docker-color-output/config.json'
-abbr -a ds 'docker stats --no-stream | docker-color-output -c ~/.config/docker-color-output/config.json'
-abbr -a dcps 'docker compose ps -a | docker-color-output -c ~/.config/docker-color-output/config.json'
+# ---- Git Aliases ----
+alias g='git'
+alias ga='git add -A -N && git add -p'
+alias gp='git push'
+alias gl='git pull'
+alias gc='git commit'
+alias gdh='git diff HEAD'
+alias gd='git diff'
+alias gst='git stash'
+alias gstp='git stash pop'
+alias gco='git checkout'
+alias gfo='git fetch origin'
+
+# ---- Docker Aliases ----
+alias di='docker images | docker-color-output -c ~/.config/docker-color-output/config.json'
+alias dps='docker ps -a | docker-color-output -c ~/.config/docker-color-output/config.json'
+alias ds='docker stats --no-stream | docker-color-output -c ~/.config/docker-color-output/config.json'
+alias dcps='docker compose ps -a | docker-color-output -c ~/.config/docker-color-output/config.json'
